@@ -33,6 +33,12 @@ The execution must be made with `race_1.php` first and immediately `race_2.php` 
 1. You may interested to checkout using phpMyAdmin to confirm the result.
 1. Enjoy! 😄😄
 
+## Where does this matters? 🤔
+
+- As an example, if you are doing a simple voting plugin for WordPress to ensure every votes counts, you need to have this locking mechanism in place. Every vote matters. Right? 😄
+- If you are developing payment plugin where redirection and webhook may happened concurrently, this is the mechanism you need to applied to avoid multiple execution for delivering orders.
+- and many more!
+
 ## Screenshot
 
 ![Terminal](/images/terminal.png)
