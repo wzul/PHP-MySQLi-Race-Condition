@@ -44,8 +44,8 @@ The execution must be made with `race_1.php` first and immediately `race_2.php` 
 The simplest way to acquire a lock (removing concurrency) is by using **GET_LOCK**. The lock will valid for the lifetime of the connection and also the timeout whichever earlier.
 
     ```sql
-    SELECT GET_LOCK('spell_payment', 15);
-    SELECT RELEASE_LOCK('spell_payment');
+    SELECT GET_LOCK('random_lock_name', 15);
+    SELECT RELEASE_LOCK('random_lock_name');
     ```
 
 ## Screenshot
